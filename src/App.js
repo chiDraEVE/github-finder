@@ -8,6 +8,11 @@ import Search from "./components/users/Search"
 import Alert from "./components/layout/Alert"
 import About from "./components/pages/About"
 import User from "./components/users/User"
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { fab } from "@fortawesome/free-brands-svg-icons"
+import { fas } from "@fortawesome/free-solid-svg-icons"
+
+library.add(fab, fas)
 
 class App extends Component {
 	state = {
