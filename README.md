@@ -3,7 +3,8 @@
 ## Chapter3: Components, State & Props
 In IntelliJ, the snippet for creating a React component is `rcjc`
 
-There is are npm-packages for font-awesome. Then you need to import the icons you use in your React component
+There is are npm-packages for font-awesome. Then you need to import the icons you use in your React component. You 
+should import all icons in one file though. It would be best to check out https://fontawesome.com/how-to-use/on-the-web/using-with/react
 ### End of Personal Notes
 
 # Default Read.me when creating a react app
