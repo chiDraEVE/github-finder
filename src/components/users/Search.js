@@ -1,16 +1,17 @@
 import React, { useState, useContext } from "react"
-import PropTypes from "prop-types"
 import GithubContext from "../../context/github/githubContext"
+import AlertContext from "../../context/alert/AlertContext"
 
-const Search = ({ setAlert }) => {
+const Search = () => {
 	const githubContext = useContext(GithubContext)
+	const alertContext = useContext(AlertContext)
 
 	const [text, setText] = useState("")
 
 	const onSubmit = (e) => {
 		e.preventDefault()
 		if (text === "") {
-			setAlert("Please enter something", "light")
+			alertContext.setAlert("Please enter something", "light")
 		} else {
 			githubContext.searchUsers(text)
 			setText("")
@@ -47,7 +48,4 @@ const Search = ({ setAlert }) => {
 	)
 }
 
-Search.propTypes = {
-	setAlert: PropTypes.func.isRequired
-}
 export default Search
